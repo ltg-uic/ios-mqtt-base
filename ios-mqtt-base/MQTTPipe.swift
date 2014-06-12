@@ -1,5 +1,5 @@
 //
-//  MQTTManager.swift
+//  MQTTPipe.swift
 //  
 //
 //  Created by Anthony Perritano on 6/11/14.
@@ -45,6 +45,11 @@ class MQTTPipe {
     }
     
     func subscribeTopic(topic: String) {
+        
+        mqttInstance.subscribe(topic, withCompletionHandler: { grantedQos in
+            println("subscribed to topic \(topic)");
+            
+        })
         
     }
     
