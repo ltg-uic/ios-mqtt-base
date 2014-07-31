@@ -11,8 +11,8 @@ import Foundation
 
 class ViewController: UIViewController {
     
-    @IBOutlet var topicTextField : UITextField
-    @IBOutlet var messageTextField : UITextField
+    @IBOutlet var topicTextField : UITextField!
+    @IBOutlet var messageTextField : UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

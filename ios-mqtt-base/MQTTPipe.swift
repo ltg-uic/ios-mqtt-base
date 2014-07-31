@@ -31,15 +31,15 @@ class MQTTPipe {
         
         mqttInstance.connectToHost(kMQTTServerHost, completionHandler: { (code: MQTTConnectionReturnCode) -> Void in
             
-            if code.value == ConnectionAccepted.value {
-                self.mqttInstance.publishString("Connectioned \(clientID)", toTopic: self.topics[0], withQos: AtMostOnce, retain: true, completionHandler: { mid in
-                    
-                    println("message has been delivered");
-                    })
-                println("Connection Accepted")
-            } else {
-                println("return code \(code.value)")
-            }
+//            if code.ConnectionAccepted == ConnectionAccepted {
+//                self.mqttInstance.publishString("Connectioned \(clientID)", toTopic: self.topics[0], withQos: AtMostOnce, retain: true, completionHandler: { mid in
+//                    
+//                    println("message has been delivered");
+//                    })
+//                println("Connection Accepted")
+//            } else {
+//                println("return code \(code.value)")
+//            }
             
         })
     }

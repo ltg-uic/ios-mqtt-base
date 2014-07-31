@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		32409622BB5841B686A36A17 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7023DD8B1947AD2B009AD342 /* ios-mqtt-base-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-mqtt-base-Bridging-Header.h"; sourceTree = "<group>"; };
+		7023DD8B1947AD2B009AD342 /* ios-mqtt-base-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-mqtt-base-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		70738A5F1947A2C0001F49C6 /* ios-mqtt-base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mqtt-base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70738A631947A2C0001F49C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70738A641947A2C0001F49C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +71,6 @@
 				70738A601947A2C0001F49C6 /* Products */,
 				DA8857BA3782478CB2B026EA /* Pods.xcconfig */,
 				C3159796EEB24187A505A500 /* Frameworks */,
-				7023DD8B1947AD2B009AD342 /* ios-mqtt-base-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +100,7 @@
 		70738A621947A2C0001F49C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7023DD8B1947AD2B009AD342 /* ios-mqtt-base-Bridging-Header.h */,
 				70738A631947A2C0001F49C6 /* Info.plist */,
 			);
 			name = "Supporting Files";
