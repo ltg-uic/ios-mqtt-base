@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 
     @IBAction func subscribeTopic(sender : AnyObject) {
         
-        if topicTextField.text {
+        if (topicTextField.text != nil) {
             
             println("topic \(topicTextField.text)")
             
