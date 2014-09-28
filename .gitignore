@@ -24,17 +24,10 @@ Icon
 xcuserdata
 profile
 *.moved-aside
-*.xcworkspace xcuserdata
 DerivedData
 .idea/
 *.hmap
 
 #CocoaPods
 Pods
-Pods/*
-Podfile.lock
 *.xcuserstate
-
-# Automatic backup files 
-*~.nib/ *.swp *~ *.dat *.dep
-
