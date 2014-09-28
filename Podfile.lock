@@ -1,0 +1,38 @@
+PODS:
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - MQTTKit (0.1.0-next)
+  - UIView+NibLoading (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.2.1)
+  - MQTTKit (from `https://github.com/mobile-web-messaging/MQTTKit.git`)
+  - UIView+NibLoading
+
+EXTERNAL SOURCES:
+  MQTTKit:
+    :git: https://github.com/mobile-web-messaging/MQTTKit.git
+
+SPEC CHECKSUMS:
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  MQTTKit: eca7270c24d16fe7865143d3e86f393f3275c544
+  UIView+NibLoading: c3f2c92501bf0f2cc10d307ab48b38e05198e490
+
+COCOAPODS: 0.33.1
