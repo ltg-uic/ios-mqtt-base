@@ -4,5 +4,9 @@
 
 
 #import <Foundation/Foundation.h>
-#import <MQTTKit.h>
+
 #import <AFNetworking.h>
+#import <Parse/Parse.h>
+#import "UIImage+Alpha.h"
+#import "UIImage+Resize.h"
+#import "UIImage+RoundedCorner.h"

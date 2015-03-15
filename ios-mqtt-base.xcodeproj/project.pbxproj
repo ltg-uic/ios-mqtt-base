@@ -14,6 +14,9 @@
 		70738A6F1947A2C0001F49C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70738A6E1947A2C0001F49C6 /* Images.xcassets */; };
 		70738A7B1947A2C0001F49C6 /* ios_mqtt_baseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70738A7A1947A2C0001F49C6 /* ios_mqtt_baseTests.swift */; };
 		70CD97D81948CB10007C5DA8 /* MQTTPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD97D71948CB10007C5DA8 /* MQTTPipe.swift */; };
+		C0A7D9693077DD90452FFB9C /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A7DD496B453F11862FE2B2 /* UIImage+Resize.m */; };
+		C0A7DB0E5CB30E2039C9BE03 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A7DBCC331B6B1161A5B3F2 /* UIImage+Alpha.m */; };
+		C0A7DF5A881BBC354D538EE9 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A7DDBAA4EF9C1341173244 /* UIImage+RoundedCorner.m */; };
 		CAF26F4E24D34CEA970A6EA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32409622BB5841B686A36A17 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +44,14 @@
 		70738A791947A2C0001F49C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70738A7A1947A2C0001F49C6 /* ios_mqtt_baseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mqtt_baseTests.swift; sourceTree = "<group>"; };
 		70CD97D71948CB10007C5DA8 /* MQTTPipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTPipe.swift; sourceTree = "<group>"; };
-		DA8857BA3782478CB2B026EA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		ADA0A279FE3CA6571B7B8FF1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C0A7DBCC331B6B1161A5B3F2 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		C0A7DC529B46147445FFE55F /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		C0A7DCBF81B96BFFA6FD77EA /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		C0A7DD496B453F11862FE2B2 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		C0A7DD6CA06604DF9576105D /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		C0A7DDBAA4EF9C1341173244 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		C7C14A3C14DB550A01286D1C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C698FD75627ECE1A367E842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7C14A3C14DB550A01286D1C /* Pods.debug.xcconfig */,
+				ADA0A279FE3CA6571B7B8FF1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		70738A561947A2C0001F49C6 = {
 			isa = PBXGroup;
 			children = (
 				70738A611947A2C0001F49C6 /* ios-mqtt-base */,
 				70738A771947A2C0001F49C6 /* ios-mqtt-baseTests */,
 				70738A601947A2C0001F49C6 /* Products */,
-				DA8857BA3782478CB2B026EA /* Pods.xcconfig */,
 				C3159796EEB24187A505A500 /* Frameworks */,
+				2C698FD75627ECE1A367E842 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +121,12 @@
 			children = (
 				7023DD8B1947AD2B009AD342 /* ios-mqtt-base-Bridging-Header.h */,
 				70738A631947A2C0001F49C6 /* Info.plist */,
+				C0A7DDBAA4EF9C1341173244 /* UIImage+RoundedCorner.m */,
+				C0A7DD496B453F11862FE2B2 /* UIImage+Resize.m */,
+				C0A7DC529B46147445FFE55F /* UIImage+Alpha.h */,
+				C0A7DBCC331B6B1161A5B3F2 /* UIImage+Alpha.m */,
+				C0A7DD6CA06604DF9576105D /* UIImage+Resize.h */,
+				C0A7DCBF81B96BFFA6FD77EA /* UIImage+RoundedCorner.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +226,8 @@
 			mainGroup = 70738A561947A2C0001F49C6;
 			productRefGroup = 70738A601947A2C0001F49C6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				70738A5E1947A2C0001F49C6 /* ios-mqtt-base */,
@@ -241,7 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE239C17AA714627A48B51EB /* Check Pods Manifest.lock */ = {
@@ -270,6 +297,9 @@
 				70738A681947A2C0001F49C6 /* ios_mqtt_base.xcdatamodeld in Sources */,
 				70738A651947A2C0001F49C6 /* AppDelegate.swift in Sources */,
 				70CD97D81948CB10007C5DA8 /* MQTTPipe.swift in Sources */,
+				C0A7DF5A881BBC354D538EE9 /* UIImage+RoundedCorner.m in Sources */,
+				C0A7D9693077DD90452FFB9C /* UIImage+Resize.m in Sources */,
+				C0A7DB0E5CB30E2039C9BE03 /* UIImage+Alpha.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,13 +414,14 @@
 		};
 		70738A7F1947A2C0001F49C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA8857BA3782478CB2B026EA /* Pods.xcconfig */;
+			baseConfigurationReference = C7C14A3C14DB550A01286D1C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ios-mqtt-base/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ios-mqtt-base-Bridging-Header.h";
@@ -400,13 +431,14 @@
 		};
 		70738A801947A2C0001F49C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA8857BA3782478CB2B026EA /* Pods.xcconfig */;
+			baseConfigurationReference = ADA0A279FE3CA6571B7B8FF1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ios-mqtt-base/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ios-mqtt-base-Bridging-Header.h";
